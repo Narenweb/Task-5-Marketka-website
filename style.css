@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.font-17{
+    font-size: 17px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-lato{
+    font-family: Lato;
+}
+.font-wt-b{
+    font-weight: bold;
+}
+.btn{
+    width: 192px;
+    height: 53px;
+    padding: 16px 49px 15px 51px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+.primary-btn {
+    background-image: linear-gradient(to right, #fe985b 3%, #fe4fa7);
+    color: #ffffff;
+}
+.secondary-btn{
+    background-color: transparent;
+    border: 1px solid grey;
+    color: #414141;
+}
+.tertiary-btn{
+    margin-top: 30px;
+    background-color: #ffffff;
+    color: #414141;
+}
+
+/* ---------Header Section --------- */
+nav>a {
+    display: inline-block;
+    padding-top: 41px;
+    object-fit: contain;
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+/* ---------Hero Section --------- */
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(https://i.ibb.co/2jYL1rf/bitmap1.png);
+    height: 100vh;
+    min-height: 841px;
+    background-size: cover;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.hero_wrapper h1, .get-started__wrapper h1 {
+    font-size: 55px;
+    line-height: 1.09;
+    color: #ffffff;
+}
+
+.hero_wrapper p, .get-started__wrapper p {
+    margin-top: 18px;
+    line-height: 1.78;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+form {
+    margin-top: 22px;
+}
+
+.hero__serach-bar {
+    width: 375px;
+    height: 53px;
+    margin-right: 20px;
+    opacity: 0.30;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+.hero__serach-bar::placeholder {
+    padding-left: 20px;
+    font-weight: bold;
+    font-family: Lato;
+    width: 80px;
+    font-size: 16px;
+}
+/* ---------Landing-page Section --------- */
+.landing-page-wrapper {
+    display: flex;
+    margin-top: 110px;
+}
+
+.landing-page h2 {
+    font-size: 30px;
+    line-height: 1.42;
+    color: #414141;
+}
+
+.landing-page h4 {
+    margin-top: 29px;
+    color: #414141;
+}
+
+.landing-page p {
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #6c6c6c;
+}
+
+.group-img {
+    width: 556px;
+    height: 411px;
+    margin: 27px 0 0 92px;
+    object-fit: contain;
+}
+
+hr {
+    margin-top: 113px;
+    border: solid 1px #e2e2e2;
+}
+
+/* ---------Start Marketing Section --------- */
+.marketing__wrapper {
+    margin-top: 86px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.marketing__wrapper>div {
+    width: calc(100% / 3);
+    margin-right: 38px;
+
+}
+
+.start-marketing {
+    text-align: center;
+}
+
+.start-marketing img {
+    object-fit: contain;
+}
+
+.start-marketing h4 {
+    margin-top: 20px;
+  
+    color: #414141;
+}
+
+.start-marketing p {
+    margin-top: 14px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #6c6c6c;
+}
+
+.marketing__wrapper>div:last-child {
+    margin-right: 0;
+}
+
+/* ---------Journey Section --------- */
+.journey {
+    background-color: #f6fafd;
+}
+
+.journey__content {
+    margin-top: 132px;
+    padding: 34px 0 1px 100px;
+    display: flex;
+}
+
+.journey__content img {
+    margin-right: 53px;
+    object-fit: contain;
+}
+
+.journey__content p {
+    margin-top: 173px;
+    font-size: 20px;
+    line-height: 1.67;
+    color: #414141;
+}
+
+.journey__content h2 {
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.journey__content h4 {
+    font-size: 20px;
+    color: #414141;
+}
+/* ---------Plan Section --------- */
+.plans__content {
+    margin-top: 117px;
+    text-align: center;
+}
+
+.plans__content h2 {
+    font-size: 36px;
+    line-height: 1.42;
+    color: #414141;
+}
+
+.plans__content p {
+    margin: 17px 0 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #6c6c6c;
+}
+.plan__cards{
+    margin-top: 66px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 371px;
+    height: 483px;
+    margin-top: 66px;
+    padding: 52px 44px 67px 45px;
+}
+.card__free{
+    background-color: #f6fafd;
+}
+.card h4, .card span{
+  color: #414141;
+}
+.card h6{
+    margin-top: 27px;
+    font-size: 72px;
+    color: #fe4fa7;
+    display: inline-block;
+}
+.card p{
+    margin: 27px 0 24px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #6c6c6c;
+}
+/* ---------Get-started Section --------- */
+.get-started{
+  height: 516px;
+  margin-top: 150px;
+  padding-top: 121px ;
+  background-image: linear-gradient(to right, #fe985b 3%, #fe4fa7);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+/* ---------Footer Section --------- */
+footer{
+    margin-top: 92px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+nav > .footer__navbar{
+    display: flex;
+    margin-top: 33px;
+  justify-content: space-between;
+}
+.footer__navbar > li:nth-child(2){
+    color: #FF78C4;
+}
+.footer__icons{
+    margin-top: 30px;
+}
+.footer__icons img{
+    width:20px;
+    height:20px;
+    margin-right: 15px;
+}
+.footer__icons > img:last-child, .copyright > li:last-child{
+    margin-right: 0;
+}
+.copyright{
+    display: flex;
+    margin: 30px 0 76px;
+}
+.copyright > li{
+    margin-right: 30px;
+    color: #464646;
+}
