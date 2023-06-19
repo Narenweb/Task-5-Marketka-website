@@ -132,7 +132,7 @@ form {
     outline: none;
     border: none;
 }
-.hero__serach-bar:placeholder-shown,[type='text']{
+.hero__serach-bar:placeholder-shown,[type='text'],[type='email']{
     padding-left: 20px;
     font-size: 18px;
 }
