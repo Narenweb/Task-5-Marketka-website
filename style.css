@@ -8,10 +8,21 @@
 
 .font-17 {
     font-size: 17px;
+    color: #414141;
 }
 
 .font-14 {
     font-size: 14px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #6c6c6c;
+}
+
+.font-16 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #6c6c6c;
 }
 
 .font-lato {
@@ -22,9 +33,23 @@
     font-weight: bold;
 }
 
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .btn {
-    width: 192px;
-    height: 53px;
     padding: 16px 49px 15px 51px;
     border-radius: 4px;
     cursor: pointer;
@@ -40,6 +65,11 @@
     background-color: transparent;
     border: 1px solid grey;
     color: #414141;
+}
+
+.secondary-btn:hover {
+    background-color: black;
+    color: #ffffff;
 }
 
 .tertiary-btn {
@@ -70,11 +100,8 @@ header {
 .hero {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(https://i.ibb.co/2jYL1rf/bitmap1.png);
     height: 100vh;
-    min-height: 841px;
-    /* max-height: 100px; */
+    /* min-height: 841px; */
     background-size: cover;
-    text-align: center;
-    padding-top: 250px;
 }
 
 .hero_wrapper h1,
@@ -94,6 +121,7 @@ header {
 
 form {
     margin-top: 22px;
+    display: flex;
 }
 
 .hero__serach-bar {
@@ -105,19 +133,18 @@ form {
     outline: none;
     border: none;
 }
-
-.hero__serach-bar::placeholder {
+.hero__serach-bar:placeholder-shown{
     padding-left: 20px;
+}
+.hero__serach-bar::placeholder {
     font-weight: bold;
     font-family: Lato;
-    width: 80px;
     font-size: 16px;
 }
 
 /* ---------Landing-page Section --------- */
 .landing-page-wrapper {
-    display: flex;
-    margin-top: 110px;
+    padding-top: 110px;
 }
 
 .landing-page h2 {
@@ -128,21 +155,16 @@ form {
 
 .landing-page h4 {
     margin-top: 29px;
-    color: #414141;
 }
 
 .landing-page p {
     margin-top: 14px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.75;
-    color: #6c6c6c;
 }
 
 .group-img {
     width: 556px;
     height: 411px;
-    margin: 27px 0 0 92px;
+    margin-top: 27px;
     object-fit: contain;
 }
 
@@ -153,19 +175,7 @@ hr {
 
 /* ---------Start Marketing Section --------- */
 .marketing__wrapper {
-    margin-top: 86px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.marketing__wrapper>div {
-    width: calc(100% / 3);
-    margin-right: 38px;
-}
-
-.start-marketing {
-    text-align: center;
+    padding: 86px 0 132px;
 }
 
 .start-marketing img {
@@ -174,19 +184,10 @@ hr {
 
 .start-marketing h4 {
     margin-top: 20px;
-
-    color: #414141;
 }
 
 .start-marketing p {
     margin-top: 14px;
-    font-weight: 300;
-    line-height: 1.75;
-    color: #6c6c6c;
-}
-
-.marketing__wrapper>div:last-child {
-    margin-right: 0;
 }
 
 /* ---------Journey Section --------- */
@@ -195,9 +196,7 @@ hr {
 }
 
 .journey__content {
-    margin-top: 132px;
-    padding: 34px 0 1px 100px;
-    display: flex;
+    padding-top: 34px;
 }
 
 .journey__content img {
@@ -219,13 +218,11 @@ hr {
 
 .journey__content h4 {
     font-size: 20px;
-    color: #414141;
 }
 
 /* ---------Plan Section --------- */
 .plans__content {
-    margin-top: 117px;
-    text-align: center;
+    padding-top: 117px;
 }
 
 .plans__content h2 {
@@ -235,16 +232,11 @@ hr {
 }
 
 .plans__content p {
-    margin: 17px 0 0;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.75;
-    color: #6c6c6c;
+    margin-top: 17px;
 }
 
 .plan__cards {
-    margin-top: 66px;
-    text-align: center;
+    padding-top: 66px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -274,33 +266,22 @@ hr {
 
 .card p {
     margin: 27px 0 24px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.75;
-    color: #6c6c6c;
 }
 
 /* ---------Get-started Section --------- */
 .get-started {
     height: 516px;
     margin-top: 150px;
-    padding-top: 121px;
     background-image: linear-gradient(to right, #fe985b 3%, #fe4fa7);
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
 }
 
 /* ---------Footer Section --------- */
 footer {
-    margin-top: 92px;
+    padding-top: 92px;
     display: flex;
-    justify-content: center;
-    text-align: center;
 }
 
-li {
+ul li {
     list-style: none;
 }
 
@@ -324,9 +305,7 @@ nav ul li:hover::after {
 }
 
 nav>.footer__navbar {
-    display: flex;
     margin-top: 33px;
-    justify-content: space-between;
 }
 
 .footer__navbar>li:nth-child(2) a {
@@ -334,26 +313,23 @@ nav>.footer__navbar {
 }
 
 .footer__icons {
-    margin-top: 30px;
+    width: 200px;
+    margin: 0 auto;
 }
 
 .footer__icons img {
     width: 20px;
     height: 20px;
-    margin-right: 15px;
-}
-
-.footer__icons>img:last-child,
-.copyright>li:last-child {
-    margin-right: 0;
+    margin-top: 30px;
 }
 
 .copyright {
-    display: flex;
     margin: 30px 0 76px;
+    width: 115%;
+    position: relative;
+    right: 30px;
 }
 
 .copyright>li {
-    margin-right: 30px;
     color: #464646;
 }
